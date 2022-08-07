@@ -3,14 +3,13 @@ import AverageSession from './AverageSessionModel'
 import Performance from './PerformanceModel'
 import User from './UserModel'
 
-
 /**
  * 
  * @param {String} instanceRequested
  * @param {String} fetchedData
  * @returns Object
  */
-const apiCall = async (instanceRequested, fetchedData) => {
+const apiRequest = async (instanceRequested, fetchedData) => {
     const getData = await fetch(fetchedData)
     // convert data to json format
     const res = await getData.json()
@@ -47,8 +46,8 @@ const apiCall = async (instanceRequested, fetchedData) => {
 				)
 			default:
 				// No endpoint for this get request
-				console.log("No data loaded !");
+				console.log("No data !");
 				break;
     }
 }
-export default apiCall
+export default apiRequest

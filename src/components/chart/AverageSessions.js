@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
+
+/**
+ * @param  {string} {userId}
+ * @param  {array} {averageSessions}
+ */
 const AverageSessions = ({userId, averageSessions}) => {
 	return (
 		<div className='bg-red-500 w-[200px] h-[200px] relative rounded-lg'>
@@ -56,9 +61,14 @@ const AverageSessions = ({userId, averageSessions}) => {
 };
 
 AverageSessions.propTypes = {
+  userId: PropTypes.string.isRequired,
   averageSessions: PropTypes.array.isRequired
 }
 
+/**
+ * @param  {bool} {active}
+ * @param  {array} {payload}
+ */
 const CustomTooltip = ({ active, payload }) => {
   if (active && payload) {
     return (

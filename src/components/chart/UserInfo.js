@@ -1,10 +1,16 @@
 import React from 'react';
 
+import PropTypes from "prop-types";
+
 import { ReactComponent as Apple } from '../../assets/icons/apple.svg'
 import { ReactComponent as Cheeseburger } from '../../assets/icons/cheeseburger.svg'
 import { ReactComponent as Chicken } from '../../assets/icons/chicken.svg'
 import { ReactComponent as Fire } from '../../assets/icons/fire.svg'
 
+
+/**
+ * @param  {object} {userData}
+ */
 const UserInfo = ({userData}) => {
 	return (
 		<div className='space-y-5 min-h-max flex flex-col justify-between'>
@@ -39,5 +45,9 @@ const UserInfo = ({userData}) => {
 		</div>
 	);
 };
+
+UserInfo.propTypes = {
+  userData: PropTypes.object.isRequired
+}
 
 export default UserInfo;

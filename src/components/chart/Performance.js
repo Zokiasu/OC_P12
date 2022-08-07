@@ -3,6 +3,11 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } from 'recharts';
 
+
+/**
+ * @param  {array} {data}
+ * @param  {object} {kind}
+ */
 const Performance = ({data, kind}) => {
 
 let userData = [];
@@ -37,5 +42,10 @@ for (let i = 0; i < data.length; i++) {
     </section>
 	);
 };
+
+Performance.propTypes = {
+  data: PropTypes.array.isRequired,
+  kind: PropTypes.object.isRequired,
+}
 
 export default Performance;

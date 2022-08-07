@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Error from './pages/Error';
 import Header from './components/Header';
 import VerticalNav from './components/VerticalNav';
-import axios from 'axios';
 
 const App = () => {
   return (
@@ -14,7 +13,7 @@ const App = () => {
         <Header />
         <div className='flex'>
           <VerticalNav />
-          <main className='mt-20'>
+          <main className='mt-20 w-full'>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/user/:id" element={<Dashboard />} />

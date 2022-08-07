@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from "prop-types";
 import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from "recharts";
 
+
+/**
+ * @param  {array} {dailyActivity}
+ */
 const Activity = ({dailyActivity}) => {
 	return (
 		<section className='bg-gray-100/70 p-5'>
@@ -75,6 +79,10 @@ Activity.propTypes = {
   dailyActivity: PropTypes.array.isRequired,
 };
 
+/**
+ * @param  {bool} {active}
+ * @param  {array} {payload}
+ */
 function CustomTooltip({ active, payload }) {
   if (active && payload) {
     return (
