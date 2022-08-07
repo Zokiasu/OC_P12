@@ -3,11 +3,10 @@ import PropTypes from "prop-types";
 import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from "recharts";
 
 const Activity = ({dailyActivity}) => {
-
 	return (
 		<section className='bg-gray-100/70 p-5'>
 			<div className='flex justify-between font-semibold'>
-				<p className='ml-10'>Activité quotidienne</p>
+				<p className='ml-5 xl:ml-10'>Activité quotidienne</p>
 				<div className='flex space-x-5 text-gray-500'>
 					<p>
 						<span className='bg-black w-2 h-2 mr-2 inline-block rounded-full'></span>
@@ -21,11 +20,11 @@ const Activity = ({dailyActivity}) => {
 			</div>
       <BarChart
         data={dailyActivity}
-        margin={{ top: 80, right: 48, bottom: 32, left: 48 }}
-        barGap={80}
+        margin={{ top: 40, right: 0, bottom: 32, left: 48 }}
+        barGap={8}
         barCategoryGap="35%"
-        width={1200}
-        height={300}
+        width={635}
+        height={200}
       >
         <CartesianGrid strokeDasharray="3 3" vertical={false} />
         <XAxis

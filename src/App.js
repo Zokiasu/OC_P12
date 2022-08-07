@@ -8,16 +8,8 @@ import VerticalNav from './components/VerticalNav';
 import axios from 'axios';
 
 const App = () => {
-  // const  [data, setData] = React.useState([]);
-
-  // // axios get request to get data from the server
-	// useEffect(() => {
-	// 	axios.get('http://localhost:3000/user/12').then((res) => console.log(res.data));
-	// }, []);
-
-
   return (
-    <div className='min-h-[724px] max-h-full overflow-hidden'>
+    <div className='min-h-[724px] overflow-hidden'>
       <BrowserRouter>
         <Header />
         <div className='flex'>

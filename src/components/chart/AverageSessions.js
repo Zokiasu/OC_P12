@@ -4,8 +4,8 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
 
 const AverageSessions = ({userId, averageSessions}) => {
 	return (
-		<div className='bg-red-500 w-96 h-96 relative rounded-lg'>
-			<h3 className='absolute top-5 left-5 text-2xl text-white'>Durée moyenne des sessions</h3>
+		<div className='bg-red-500 w-[200px] h-[200px] relative rounded-lg'>
+			<h3 className='absolute top-5 left-5 text-white'>Durée moyenne des sessions</h3>
 			<ResponsiveContainer
 				width="100%" 
 				height="100%"

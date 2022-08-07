@@ -15,7 +15,7 @@ for (let i = 0; i < data.length; i++) {
 	})
 }
 	return (
-    <section className='w-96 h-96 bg-gray-900 rounded-lg'>
+    <section className='bg-gray-900 w-[200px] h-[200px] rounded-lg'>
 			<ResponsiveContainer width="100%" height="100%" border-radius="10px">
 				<RadarChart 
 					cx="50%" 
@@ -29,10 +29,7 @@ for (let i = 0; i < data.length; i++) {
 						stroke="white"
 						dy={4}
 						tickLine={false}
-						tick={{
-							fontSize: 12,
-							fontWeight: 500
-						}}    
+						tick={{ fontSize: 12, fontWeight: 500 }}    
 					/>
 					<Radar name="Mike" dataKey="A" fill="#FF0101" fillOpacity={0.7} />
 				</RadarChart>

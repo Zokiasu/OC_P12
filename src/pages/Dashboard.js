@@ -39,13 +39,13 @@ const Dashboard = () => {
 	}, []);
 
 	return (
-		<div className='pt-16 px-20 space-y-14'>
-			<div className='space-y-8'>
-				<h1 className='text-5xl font-semibold'>Bonjour <span className='text-red-500'>{user ? user.KeyData.firstName:'Guest'}</span></h1>
-				<p className='text-2xl'>Félicitation ! Vous avez explosé vos objectifs hier</p>
+		<div className='p-5 xl:pt-16 xl:px-20 space-y-10'>
+			<div className='space-y-5 xl:space-y-8'>
+				<h1 className='text-3xl xl:text-5xl font-semibold'>Bonjour <span className='text-red-500'>{user ? user.KeyData.firstName:'Guest'}</span></h1>
+				<p className='text-xl xl:text-2xl'>Félicitation ! Vous avez explosé vos objectifs hier</p>
 			</div>
-			<div className='flex space-x-10'>
-				<div className='space-y-10'>
+			<div className='flex space-x-5'>
+				<div className='space-y-5'>
 					{ activity && ( <Activity dailyActivity ={activity}/> ) }
 					<div className='w-full flex justify-between'>
 						{ averageSession && ( <AverageSession userId={userId} averageSessions={averageSession}/> ) }
