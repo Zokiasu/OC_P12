@@ -16,7 +16,7 @@ const Score = ({score}) => {
 
 	return (
 		<div className='relative w-[200px] h-[200px] bg-gray-100/70 rounded-lg flex flex-col justify-center items-center'>
-      <h2 className='font-semibold absolute top-5'>Score</h2>
+      <h2 className='font-semibold absolute top-5'>Score </h2>
       <PieChart width={200} height={200}>
         <Pie
           data={circleData}

@@ -52,18 +52,18 @@ const Dashboard = () => {
 
 	return !isLoaded ? <p className='w-full text-2xl p-10'>Loading...</p>
     : (
-		<div className='p-5 xl:pt-16 xl:px-20 space-y-10'>
+		<div className='p-10 xl:pt-16 xl:px-20 space-y-10'>
 			<div className='space-y-5 xl:space-y-8'>
 				<h1 className='text-3xl xl:text-5xl font-semibold'>Bonjour <span className='text-red-500'>{user ? user.KeyData.firstName:'Guest'}</span></h1>
 				<p className='text-xl xl:text-2xl'>Félicitation ! Vous avez explosé vos objectifs hier</p>
 			</div>
-			<div className='flex space-x-5'>
+			<div className='flex flex-col space-y-5 lg:flex-row lg:space-y-0 lg:space-x-5'>
 				<div className='space-y-5'>
 					{ activity && ( <Activity dailyActivity ={activity}/> ) }
 					<div className='w-full flex justify-between'>
 						{ averageSession && ( <AverageSession userId={userId} averageSessions={averageSession}/> ) }
 						{ performance && ( <Performance data={performance.data} kind={performance.kind}/> ) }
-						{ user && ( <Score score={user.todayScore}/> ) }
+						{ user && ( <Score score={user.todayScore ? user.todayScore : user.score}/> ) }
 					</div>
 				</div>
 				{ user && ( <UserInfo userData={user.userInfos}/> ) }

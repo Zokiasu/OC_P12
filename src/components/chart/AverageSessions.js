@@ -17,8 +17,8 @@ const AverageSessions = ({userId, averageSessions}) => {
 			>
 				<LineChart
 					data={averageSessions}
-					outerRadius="75%"
-					margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+					outerRadius="100%"
+					margin={{ top: 5, right: 15, left: 15, bottom: 5 }}
 					width={200}
 					height={200}
 				>
@@ -27,6 +27,7 @@ const AverageSessions = ({userId, averageSessions}) => {
 						stroke="rgba(255, 255, 255, 0.6)"
 						dy={10}
 						tick={{ fontSize: 14, fill: "rgba(255, 255, 255, 0.5)"}}
+						margin={{ top: 5, right: 10, left: 10, bottom: 5 }}
 						tickLine={false}
 						axisLine={false}
 					/>

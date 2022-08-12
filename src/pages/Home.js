@@ -17,7 +17,7 @@ const Home = () => {
 				<NavLink to="/user/12">
 					<li className="bg-red-700 text-white rounded-lg px-5 py-2">User 12</li>
 				</NavLink>
-				<NavLink to="/user/12">
+				<NavLink to="/user/18">
 					<li className="bg-red-700 text-white rounded-lg px-5 py-2">User 18</li>
 				</NavLink>
 			</ul>

@@ -6,15 +6,14 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } fro
 
 /**
  * @param  {array} {data}
- * @param  {object} {kind}
  */
-const Performance = ({data, kind}) => {
+const Performance = ({data}) => {
 
 let userData = [];
 
 for (let i = 0; i < data.length; i++) {
 	userData.splice(0,0, {
-		subject: kind[i+1],
+		subject: data[i].kind,
 		A: data[i].value,
 		fullMark: 300
 	})
@@ -44,8 +43,7 @@ for (let i = 0; i < data.length; i++) {
 };
 
 Performance.propTypes = {
-  data: PropTypes.array.isRequired,
-  kind: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired
 }
 
 export default Performance;

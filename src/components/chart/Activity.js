@@ -5,6 +5,7 @@ import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from "recharts";
 
 /**
  * @param  {array} {dailyActivity}
+ * @returns user activity chart
  */
 const Activity = ({dailyActivity}) => {
 	return (
