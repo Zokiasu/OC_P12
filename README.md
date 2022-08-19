@@ -14,7 +14,7 @@ Build a user profile page in React, fetching data from a NodeJS external server.
 
 ## Installation Dependencies
 
-- You need [Node](https://nodejs.org/en/) to run the `npm` commands
+- You need [Node](https://nodejs.org/en/) v16.14.2 to run the `npm` commands
 
 - Get the backend API, fork this repo and follow the instructions
 
